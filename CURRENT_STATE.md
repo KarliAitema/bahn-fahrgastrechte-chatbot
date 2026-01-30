@@ -1,17 +1,21 @@
 # CURRENT_STATE - Bahn Fahrgastrechte Chatbot
 
-## Status: In Arbeit (v2 High-End)
+## Status: Fertig & Deploy-Bereit
 
 ## Letzte Aenderung
 - Datum: 2026-01-30
 - Von: Kari
-- Was wurde gemacht: Upgrade auf Streamlit Web-UI und Google Gemini API Integration. PRD und SPEC erstellt. API Key von F. erhalten.
+- Was wurde gemacht: 
+    - High-End System-Prompt mit Taxi/Hotel Regeln implementiert.
+    - `requirements.txt` für Cloud-Deployment erstellt.
+    - Code auf GitHub gepusht: https://github.com/KarliAitema/bahn-fahrgastrechte-chatbot
+    - Deployment-Anleitung erstellt.
 
 ## Aktuelle Features
-- Streamlit Web-Interface (`app.py`).
-- KI-Chatbot mit Google Gemini Integration.
-- Side-Bar Rechner für schnelle Entschädigungskalkulation.
-- PRD & SPEC Dokumentation.
+- Streamlit Web-Interface.
+- KI-Chatbot (Gemini 1.5 Flash) mit Expertenwissen zu EU 2021/782.
+- Taxi-Erstattung (bis 120€) & Hotel-Logik.
+- Side-Bar Quick-Check Rechner.
 
 ## Bekannte Issues
 - API Key muss in der Umgebung gesetzt sein.
