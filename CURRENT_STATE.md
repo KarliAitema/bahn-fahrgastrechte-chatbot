@@ -1,20 +1,20 @@
 # CURRENT_STATE - Bahn Fahrgastrechte Chatbot
 
-## Status: Fertig (MVP)
+## Status: In Arbeit (v2 High-End)
 
 ## Letzte Aenderung
 - Datum: 2026-01-30
-- Von: Kari (Hand-built nach Timeout von Claude Code)
-- Was wurde gemacht: Erstellung eines einfachen Chatbots (Python), FAQ-Liste und README.
+- Von: Kari
+- Was wurde gemacht: Upgrade auf Streamlit Web-UI und Google Gemini API Integration. PRD erstellt.
 
 ## Aktuelle Features
-- Keyword-basiertes Chatten über Terminal.
-- Informationen zu Entschädigungssätzen (60/120 Min).
-- Anleitung zur Beantragung (Digital & Papier).
+- Streamlit Web-Interface (`app.py`).
+- KI-Chatbot Vorbereitung (Google Gemini 1.5).
+- Side-Bar Rechner für schnelle Entschädigungskalkulation.
+- PRD für die weitere Entwicklung.
 
 ## Bekannte Issues
-- Sehr einfache Logik (nur Keyword-Matching).
-- Kein Web-Interface.
+- API Key muss als Umgebungsvariable gesetzt werden (`GOOGLE_API_KEY`).
 
 ## Naechste Schritte
 - Integration einer LLM-API für bessere Antworten.
