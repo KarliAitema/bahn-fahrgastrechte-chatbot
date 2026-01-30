@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bahn Fahrgastrechte Chatbot</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🚂 Bahn Fahrgastrechte Chatbot</h1>
+            <p class="subtitle">Informationen zu Ihren Rechten bei Verspätungen und Ausfällen</p>
+        </header>
+
+        <main>
+            <div class="chat-container">
+                <div id="chat-messages" class="chat-messages">
+                    <div class="message bot-message">
+                        <p>Willkommen! Ich helfe Ihnen bei Fragen zu Ihren Fahrgastrechten bei der Deutschen Bahn.</p>
+                        <p>Wählen Sie ein Thema oder stellen Sie mir eine Frage:</p>
+                    </div>
+                </div>
+
+                <div class="quick-actions">
+                    <button class="action-btn" onclick="handleQuickAction('verspaetung')">
+                        ⏰ Verspätung
+                    </button>
+                    <button class="action-btn" onclick="handleQuickAction('ausfall')">
+                        ❌ Zugausfall
+                    </button>
+                    <button class="action-btn" onclick="handleQuickAction('entschaedigung')">
+                        💰 Entschädigung berechnen
+                    </button>
+                    <button class="action-btn" onclick="handleQuickAction('antrag')">
+                        📝 Antrag stellen
+                    </button>
+                </div>
+
+                <div class="input-container">
+                    <input 
+                        type="text" 
+                        id="user-input" 
+                        placeholder="Ihre Frage..."
+                        onkeypress="handleKeyPress(event)"
+                    >
+                    <button onclick="sendMessage()">Senden</button>
+                </div>
+            </div>
+
+            <aside class="info-panel">
+                <h2>Wichtige Informationen</h2>
+                
+                <div class="info-card">
+                    <h3>📋 Entschädigungsanspruch</h3>
+                    <ul>
+                        <li>60-119 Min Verspätung: 25% Erstattung</li>
+                        <li>Ab 120 Min Verspätung: 50% Erstattung</li>
+                        <li>Mindestbetrag: 4 Euro</li>
+                    </ul>
+                </div>
+
+                <div class="info-card">
+                    <h3>⏱️ Fristen</h3>
+                    <ul>
+                        <li>Antragsfrist: 12 Monate nach Fahrt</li>
+                        <li>Bearbeitung: ca. 4-6 Wochen</li>
+                    </ul>
+                </div>
+
+                <div class="info-card">
+                    <h3>🔗 Links</h3>
+                    <ul>
+                        <li><a href="https://www.bahn.de/service/fahrgastrechte" target="_blank">DB Fahrgastrechte</a></li>
+                        <li><a href="https://www.eba.bund.de" target="_blank">Schlichtungsstelle</a></li>
+                    </ul>
+                </div>
+            </aside>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

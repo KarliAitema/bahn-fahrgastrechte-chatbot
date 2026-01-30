@@ -1,4 +1,16 @@
-# Requirements for deployment
-streamlit
-google-generativeai
-python-dotenv
+# Core Dependencies
+streamlit>=1.28.0
+pandas>=2.0.0
+numpy>=1.24.0
+
+# AI/ML Dependencies (falls benötigt)
+openai>=1.0.0
+langchain>=0.1.0
+python-dotenv>=1.0.0
+
+# Datenverarbeitung
+requests>=2.31.0
+beautifulsoup4>=4.12.0
+
+# Optional: Für PDF-Verarbeitung
+PyPDF2>=3.0.0

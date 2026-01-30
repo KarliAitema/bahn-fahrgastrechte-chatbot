@@ -1,0 +1,12 @@
+{
+  "name": "bahn-fahrgastrechte-chatbot",
+  "version": "1.0.0",
+  "description": "Chatbot für Deutsche Bahn Fahrgastrechte",
+  "scripts": {
+    "deploy": "wrangler pages deploy static_version",
+    "dev": "python -m http.server 8000 --directory static_version"
+  },
+  "keywords": ["bahn", "fahrgastrechte", "chatbot"],
+  "author": "",
+  "license": "MIT"
+}
