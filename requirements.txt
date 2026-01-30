@@ -1,0 +1,4 @@
+# Requirements for deployment
+streamlit
+google-generativeai
+python-dotenv

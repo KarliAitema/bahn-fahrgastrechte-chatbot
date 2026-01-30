@@ -5,20 +5,20 @@
 ## Letzte Aenderung
 - Datum: 2026-01-30
 - Von: Kari
-- Was wurde gemacht: Upgrade auf Streamlit Web-UI und Google Gemini API Integration. PRD erstellt.
+- Was wurde gemacht: Upgrade auf Streamlit Web-UI und Google Gemini API Integration. PRD und SPEC erstellt. API Key von F. erhalten.
 
 ## Aktuelle Features
 - Streamlit Web-Interface (`app.py`).
-- KI-Chatbot Vorbereitung (Google Gemini 1.5).
+- KI-Chatbot mit Google Gemini Integration.
 - Side-Bar Rechner für schnelle Entschädigungskalkulation.
-- PRD für die weitere Entwicklung.
+- PRD & SPEC Dokumentation.
 
 ## Bekannte Issues
-- API Key muss als Umgebungsvariable gesetzt werden (`GOOGLE_API_KEY`).
+- API Key muss in der Umgebung gesetzt sein.
 
 ## Naechste Schritte
-- Integration einer LLM-API für bessere Antworten.
-- Web-UI (z.B. mit Streamlit oder Flask).
+- API Key in die lokale Umgebung einpflegen.
+- Implementation der erweiterten Logik laut SPEC.md.
 
 ## Tech Stack
 - Sprache: Python 3
